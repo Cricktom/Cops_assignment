@@ -13,7 +13,7 @@ To start server tupe command in console
 "python baker_street.py"
 
 
-        ######### Section 1 (class Tweet_retriever)##################
+        ######### Section 1 (class TweetRetriever)##################
 Section is about fetching tweets from twitter and index them into elastic server as leads.
 If index is not present this script will make index as per the requirement.
 Sample query execution command for tunning section 1
@@ -24,7 +24,7 @@ you need to mannualy up the server by typing "python baker_street.py"
 curl -i -X POST http://localhost:7080/cops/app/tweets
 
 
-        ############ Section  2 (class Query_Lead)#################
+        ############ Section  2 (class QueryLead)#################
 Section 2 is to making queries into elastic server.
 it has four params to execute first will be query of text which can be any entity, category, country or random tweet text.
 Second and third param for temporal query execution where second param is smaller date and third one is larger date in format "2018-03-29T07:05:45" the portion from t is optional.
